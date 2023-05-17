@@ -1,0 +1,43 @@
+@import '../../Assets/main';
+
+.front_trending {
+  @include flex(100%, 37vh,center, none, column);
+  gap: 1rem;
+  border-bottom: solid $light-color 1px;
+  .trending {
+    font-size: 1.15rem; 
+    @include flex(none, none, none, center, none);
+    gap: 0.5rem;
+    padding-left: 20rem;
+  }
+  .card {
+    @include flex(70%, 25vh, none, none, none);
+    gap: 3rem;
+    padding-left: 20rem;
+    flex-wrap: wrap;
+  }
+  .card_container {
+    @include flex(30%, 10vh, none, none, none);
+  }
+  .card_divider {
+    @include flex(100%,none, space-around, none, none);
+    gap: 1rem;
+  }
+  .card_no {
+    font-size: 2rem;
+    color: $light-color;
+  }
+  .card_info {
+    font-weight: bold;
+    width:15vw;
+  }
+  .card_heading {
+    font-size: 0.85rem;
+    padding: 0.5rem 0;
+  }
+  .card_footer {
+    font-weight: lighter;
+    padding-top: 1rem;
+    color: #757575;
+  }
+}

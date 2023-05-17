@@ -1,0 +1,46 @@
+@import '../../Assets/main';
+nav{
+  background-color: $primary-color;
+  @include flex(100%, 8.5vh, space-around, center, none);
+  border-bottom: solid $secondary-color 1px;
+  
+}
+  ul {
+  @include flex(none, none, center, center, none);
+  gap: 1.5rem;
+  text-decoration: none;
+  list-style-type: none;
+.link{
+  color:$secondary-color;
+  text-decoration: none;
+}
+}
+
+.btn {
+  color: white;
+  padding: 13px 15px;
+  border: none;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: $secondary-color;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 650px){
+   nav{
+    justify-content: space-between;
+   }
+  .first{
+    display: none;
+  }
+}
+@media screen and (max-width: 550px){
+  #sign_in{
+    display:none;
+  }
+}
+
+
+

@@ -1,0 +1,14 @@
+$primary-color: #ffc017;
+$secondary-color: #000000;
+$light-color: #e6e6e6;
+$primary-font: 'sohne', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+$secondary-font: 'gt-super', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif';
+
+@mixin flex($w_val, $h_val, $justify_val, $items_val, $direction_val) {
+  display: flex;
+  width: $w_val;
+  height: $h_val;
+  justify-content: $justify_val;
+  align-items: $items_val;
+  flex-direction: $direction_val;
+}

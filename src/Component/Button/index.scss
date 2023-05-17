@@ -1,0 +1,13 @@
+@import '../../Assets/main';
+
+.black_btn{
+  color: white;
+  border: none;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: $secondary-color;
+  &:hover{
+    cursor: pointer;
+  }
+
+}
