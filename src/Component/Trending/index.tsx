@@ -1,6 +1,7 @@
 import './index.scss'
+import Card from '../Card'
 
-interface ITrendingprops {
+export interface ITrendingprops {
   id: number
   heading: string
   subheading: string
@@ -9,42 +10,42 @@ interface ITrendingprops {
 }
 
 const Trendingdata: ITrendingprops[] = [
-   {
+  {
     id: 1,
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
-{
+  {
     id: 2,
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
-{
+  {
     id: 3,
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
-{
+  {
     id: 4,
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
-{
+  {
     id: 5,
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
-{
+  {
     id: 6,
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
@@ -52,30 +53,6 @@ const Trendingdata: ITrendingprops[] = [
     time: '5 min read',
   },
 ]
-
-const Card: React.FC<ITrendingprops> = ({
-  id,
-  heading,
-  subheading,
-  date,
-  time,
-}) => {
-  return (
-    <div className='card_container'>
-      <div className='card_divider'>
-        <aside className='card_no'>0{id}</aside>
-        <div className='card_info'>
-          <header className='card_heading'>{heading}</header>
-          {subheading}
-       
-        <footer className='card_footer' >
-          {date}.{time}
-        </footer>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 const Trending: React.FC = () => {
   return (

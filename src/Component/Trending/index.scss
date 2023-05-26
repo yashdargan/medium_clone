@@ -16,28 +16,5 @@
     padding-left: 20rem;
     flex-wrap: wrap;
   }
-  .card_container {
-    @include flex(30%, 10vh, none, none, none);
+
   }
-  .card_divider {
-    @include flex(100%,none, space-around, none, none);
-    gap: 1rem;
-  }
-  .card_no {
-    font-size: 2rem;
-    color: $light-color;
-  }
-  .card_info {
-    font-weight: bold;
-    width:15vw;
-  }
-  .card_heading {
-    font-size: 0.85rem;
-    padding: 0.5rem 0;
-  }
-  .card_footer {
-    font-weight: lighter;
-    padding-top: 1rem;
-    color: #757575;
-  }
-}
