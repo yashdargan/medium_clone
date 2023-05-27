@@ -11,7 +11,7 @@
     padding-left: 20rem;
   }
   .card {
-    @include flex(70%, 25vh, none, none, none);
+    @include flex(80%, 25vh, none, none, none);
     gap: 3rem;
     padding-left: 20rem;
     flex-wrap: wrap;

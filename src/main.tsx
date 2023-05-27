@@ -10,6 +10,7 @@ import Signin from './Pages/Signin/index.tsx'
 import Front from './Pages/Front/index.tsx'
 import Errorpage from './Pages/Error/index.tsx'
 import { Provider } from 'react-redux'
+import store from './store/blog.tsx'
 
 const router = createBrowserRouter([
   {

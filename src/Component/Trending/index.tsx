@@ -2,7 +2,7 @@ import './index.scss'
 import Card from '../Card'
 
 export interface ITrendingprops {
-  id: number
+  id?: string
   heading: string
   subheading: string
   date: string
@@ -11,42 +11,42 @@ export interface ITrendingprops {
 
 const Trendingdata: ITrendingprops[] = [
   {
-    id: 1,
+    id: '01',
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
   {
-    id: 2,
+    id: '02',
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
   {
-    id: 3,
+    id: '03',
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
   {
-    id: 4,
+    id: '04',
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
   {
-    id: 5,
+    id: '05',
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',
     time: '5 min read',
   },
   {
-    id: 6,
+    id: '06',
     heading: 'Matty Brownell in UX Collective',
     subheading: 'How I used Midjourney to design a brand identity',
     date: 'May 5',

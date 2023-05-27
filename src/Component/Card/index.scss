@@ -4,7 +4,7 @@
     @include flex(30%, 10vh, none, none, none);
   }
   .card_divider {
-    @include flex(100%,none, space-around, none, none);
+    @include flex(none,none, space-around, none, none);
     gap: 1rem;
   }
   .card_no {

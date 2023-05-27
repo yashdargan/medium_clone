@@ -1,8 +1,20 @@
 export interface IButton {
-  value: string;
-  p: string;
+  value: string
+  p: string
 }
 
 export interface IDataItem {
-  id:string
+  articles: {
+    source: {
+      id:string
+      name:string
+    }
+    author: string
+    title: string
+    description:string
+    url:string
+    urlToImage: string
+    publishedAt: string
+    content: string
+  }[]
 }

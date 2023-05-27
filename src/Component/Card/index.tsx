@@ -10,7 +10,7 @@ const Card: React.FC<ITrendingprops> = ({
   return (
     <div className='card_container'>
       <div className='card_divider'>
-        <aside className='card_no'>0{id}</aside>
+        <aside className='card_no'>{id}</aside>
         <div className='card_info'>
           <header className='card_heading'>{heading}</header>
           {subheading}

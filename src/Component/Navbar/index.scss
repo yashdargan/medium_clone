@@ -3,7 +3,6 @@ nav{
   background-color: $primary-color;
   @include flex(100%, 8.5vh, space-around, center, none);
   border-bottom: solid $secondary-color 1px;
-  
 }
   ul {
   @include flex(none, none, center, center, none);
