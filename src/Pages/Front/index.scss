@@ -1,24 +1,33 @@
 @import '../../Assets/main';
 
-main{
-  @include flex(100%,48vh,center,center,none);
+main {
+  @include flex(100%, 48vh, center, center, none);
   border-bottom: solid black 1px;
   background-color: $primary-color;
 }
 
-.front_container{
-  @include flex(none,none,space-around,flex-start,column);
-  gap:2rem;
-  .show_msg{
+.front_container {
+  @include flex(none, none, space-around, flex-start, column);
+  gap: 2rem;
+  .show_msg {
     font-size: 1.5rem;
     font-weight: lighter;
-    width:65%;
+    width: 65%;
   }
-  .big_font{
-  font-size: 6rem;
-  font-family: $secondary-font;
+  .big_font {
+    font-size: 6rem;
+    font-family: $secondary-font;
+  }
+ }
 
-}
-
-}
+    @media screen and (max-width:1700px) {
+       #style1 {
+         width: 500px;
+    }
+  }
+  @media screen and (max-width:1000px){
+    #style {
+      display:none;
+    }
+  }
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import {TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
+import { RootState,AppDispatch } from '../../store/blog'
 import {
   fetchData,
   selectData,
@@ -48,11 +49,14 @@ const items: IDiscoverItems[] = [
   },
 ]
 
+export const useAppDispatch:()=> AppDispatch = useDispatch
+export const useAppSelector:TypedUseSelectorHook<RootState> = useSelector
+
 const Blog: React.FC = () => {
-  const dispatch = useDispatch()
-  const data: IDataItem = useSelector(selectData)
-  const loading: boolean = useSelector(selectLoading)
-  const error: string = useSelector(selectError)
+  const dispatch = useAppDispatch()
+  const data: IDataItem = useAppSelector(selectData)
+  const loading: boolean = useAppSelector(selectLoading)
+  const error: string = useAppSelector(selectError)
 
   useEffect(() => {
     dispatch(fetchData())

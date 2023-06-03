@@ -17,7 +17,7 @@ const Front: React.FC = () => {
           </div>
           <Blackbtn value='Start reading' p='13px 50px' />
         </div>
-        <img id='style1' src='style2.svg' />
+        <img id='style1' src='style2.svg' width={600} />
       </main>
       <Trending />
       <Blog />

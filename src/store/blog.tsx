@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import dataReducer from '../action/Apiaction.ts';
-import logger from 'redux-logger';
+import logger from 'redux-logger'
 const store = configureStore({
 reducer:{
     data:dataReducer,
